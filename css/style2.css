@@ -1,12 +1,18 @@
 .img-size-for-card{
     max-width: 170px;
-    height: 120px;
+    max-height: 120px;
     float: left;
     margin-right: 10px;
+}
+span{
+    color: black;
 }
 .articleEl{
     max-height: 200px;
     object-fit: cover;
+}
+.articleText{
+    text-align: justify;
 }
 .grey-text{
     color: grey;  
@@ -16,14 +22,12 @@
     text-decoration: none;
     color: black;
 }
-.pagination{
-    width: 1000px;
-    display: flex;
-    justify-content: right;
-}
 .epmty{
     height: 100px;
 }
 .epmty2{
     height: 30px;
+}
+.p3{
+    text-align: justify;
 }

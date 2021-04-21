@@ -1,3 +1,15 @@
 .formContainer{
-    width: 400px;
+    max-width: 300px;
+    /* max-height:200px ; */
+}
+.formContainer input{
+    border-radius: 0%;
+    border-color: black;
+    max-height: 30px;
+}
+.epmty5{
+    height: 100px;
+}
+select{
+    max-height: 35px;
 }

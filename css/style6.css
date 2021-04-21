@@ -1,0 +1,14 @@
+.img-size-for-card{
+    max-height: 150px;
+}
+.articleEl{
+   margin-left: 15px;
+   max-width: 1050px;
+   text-align: justify;
+}
+.contactContainer{
+    margin-left: 12px;
+}
+.epmty6{
+    height: 30px;
+}
