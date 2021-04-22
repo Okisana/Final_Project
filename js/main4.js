@@ -10,7 +10,6 @@
                 $message = $($('.message_template').clone().html());
                 $message.addClass(_this.message_side).find('.text').html(_this.text);
                 $message.find('.avatar').html(_this.avatar);
-                
 
                 $('.messages').append($message);
                 return setTimeout(function () {
@@ -21,7 +20,7 @@
         return this;
     };
     $(function () {
-        let getMessageText, message_side, sendMessage, avatar;
+        let getMessageText, message_side, sendMessage;
         message_side = 'right';
        
         getMessageText = function () {
@@ -29,15 +28,13 @@
             $message_input = $('.message_input');
             return $message_input.val();
         };
-        sendMessage = function (text, avatar) {
+        $('.message_input').val('');
+        sendMessage = function (text, avatar, date) {
             let $messages, message;
             if (text.trim() === '') {
                 return;
             }
 
-            $('.message_input').val('');
-            // avatar = 'Pēteris';
-            // avatar = $('.avatar').val();
             $messages = $('.messages');
             message_side = message_side === 'left' ? 'right' : 'left';
             
@@ -46,8 +43,11 @@
             message = new Message({
                 text: text,
                 message_side: message_side,
-                avatar: username.val(),
+                avatar: avatar || username.val(),
             });
+            
+            $('.message_input').val('');
+            $('#username_inputfield').val('');
 
             message.draw();
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
@@ -60,6 +60,6 @@
                 return sendMessage(getMessageText());
             }
         });
-        sendMessage('Hello! How are you today?', 'Pēteris');
+        sendMessage('Hello! How are you today?', 'Liene');
     });
 }.call(this));

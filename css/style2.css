@@ -4,12 +4,15 @@
     float: left;
     margin-right: 10px;
 }
+.cardImage{
+    margin: 5px 5px;
+    max-width: 100%;
+}
 span{
     color: black;
 }
 .articleEl{
-    max-height: 200px;
-    object-fit: cover;
+    border: none;
 }
 .articleText{
     text-align: justify;
@@ -18,7 +21,6 @@ span{
     color: grey;  
 }
 .pageLink{
-    padding-top: 12px;
     text-decoration: none;
     color: black;
 }

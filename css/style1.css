@@ -7,22 +7,13 @@
     max-width: 700px;
     margin: 0 auto;
 }
-.img-size-for-card{
-    max-width: 130px;
-    height: 105px;
+.cardImage{
+    margin:5px 5px;
 }
-.articleEl{
-    max-height: 180px;
-    object-fit: cover;
-    width: 32%;
-}
-.textwrap{
-    text-overflow: ellipsis;
-}
-.article-title{
+.card-title{
     font-size: 13px;
 }
-.articleText{
+.card-text{
     font-size: 13px;
     max-width: fit-content;
 }

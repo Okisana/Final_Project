@@ -39,91 +39,110 @@
             <hr>
         </div>
 
-        <div class="row">
-            <a href="./page1.html" class="pageLink"> <small> Home > <span class="grey-text">About us</span> </small></a>
-        </div>
-
-        <div class="row mt-3"> <p class="fs-4">About us</p> </div>
-
-
         <div class="container">
-            <ul class="nav nav-pills  " id="pills-tab" role="tablist">
-                <li class="nav-item border" role="presentation">
-                <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All About Us</button>
-                </li>
-                <li class="nav-item border" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Our Team</button>
-                </li>
-                <li class="nav-item border" role="presentation">
-                <button class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Veterinary Information</button>
-                </li>
-                <li class="nav-item border" role="presentation">
-                    <button class="nav-link " id="pills-funded-tab" data-bs-toggle="pill" data-bs-target="#pills-funded" type="button" role="tab" aria-controls="pills-funded" aria-selected="false">How We’re Funded</button>
-                </li>
-            </ul>
 
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="pageLink" href="./page1.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About us</li>
+                </ol>
+            </nav>
+
+            <div class="row mt-3"> <p class="fs-4">About us</p> </div>
+
+            <!-- tab buttons -->
+            <div class="row">
+                <div class="col">
+
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item border" role="presentation">
+                        <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All About Us</button>
+                        </li>
+                        <li class="nav-item border" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Our Team</button>
+                        </li>
+                        <li class="nav-item border" role="presentation">
+                        <button class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Veterinary Information</button>
+                        </li>
+                        <li class="nav-item border" role="presentation">
+                            <button class="nav-link " id="pills-funded-tab" data-bs-toggle="pill" data-bs-target="#pills-funded" type="button" role="tab" aria-controls="pills-funded" aria-selected="false">How We’re Funded</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+
+            <!-- tab content -->
             <div class="tab-content border pb-3" id="pills-tabContent">
 
                 <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="row g-0">
-                        <div class="articleEl pt-3">
-                            <div>
-                                <img class="img-size-for-card" src="https://progressltd.okis.ru/files/5/9/5/5952/about%20us.jpg" alt="Card image cap">
-                            </div>
-                            <div> 
-                                All About Cats’ expert-written, expert-reviewed guides bring you the facts on cat
-                                products, behavior, health, and more. Whether you want to choose the best food or
-                                find out why your cat wakes you up in the middle of the night, we’re here to arm
-                                you with the knowledge you need. Our editorial team is made of dedicated cat
-                                lovers and experts, including over a dozen veterinarians, a cat behavior
-                                specialist, and several seasoned pet writers.
+                        <div class="col-6 col-md-3">
+                            <img class="img-fluid cardImage" src="https://progressltd.okis.ru/files/5/9/5/5952/about%20us.jpg" alt="Card image cap">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <div class="card-body">
+                                <p class="card-text articleText"> 
+                                    All About Cats’ expert-written, expert-reviewed guides bring you the facts on cat
+                                    products, behavior, health, and more. Whether you want to choose the best food or
+                                    find out why your cat wakes you up in the middle of the night, we’re here to arm
+                                    you with the knowledge you need. Our editorial team is made of dedicated cat
+                                    lovers and experts, including over a dozen veterinarians, a cat behavior
+                                    specialist, and several seasoned pet writers.
+                                </p>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
 
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="row g-0">
-                        <div class="articleEl pt-3">
-                            <div>
-                                <img class="img-size-for-card" src="https://allaboutcats.com/wp-content/uploads/2021/01/Mallory-Crusta-Cliverse-Photo-small-300x300.jpg" alt="Card image cap">
-                            </div>
-                            <div>
-                                As the head of content at All About Cats, Mallory is dedicated to ensuring that
-                                the information you see here is trustworthy, clear, and engaging. When she’s not 
-                                reviewing cat products or editing content, Mallory enjoys skiing and hiking. She
-                                has two cats, Wessie and Forest.
+                        <div class="col-6 col-md-3">
+                            <img class="img-fluid cardImage"  src="https://allaboutcats.com/wp-content/uploads/2021/01/Mallory-Crusta-Cliverse-Photo-small-300x300.jpg" alt="Card image cap">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <div class="card-body">
+                                <p class="card-text articleText">
+                                    As the head of content at All About Cats, Mallory is dedicated to ensuring that
+                                    the information you see here is trustworthy, clear, and engaging. When she’s not 
+                                    reviewing cat products or editing content, Mallory enjoys skiing and hiking. She
+                                    has two cats, Wessie and Forest.
+                                </p>
                             </div>
                         </div>
-                    </div>  
+                    </div> 
                 </div>
-                
+
                 <div class="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div class="row g-0">
-                        <div class="articleEl pt-3">
-                            <div>
-                                <img class="img-size-for-card" src="https://www.vin.com/global/images/Proud2BaVINner/vetwcat.png" alt="Card image cap">
-                            </div>
-                            <div>
+                        <div class="col-6 col-md-3">
+                            <img class="img-fluid cardImage" src="https://www.vin.com/global/images/Proud2BaVINner/vetwcat.png" alt="Card image cap">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <div class="card-body">
+                            <p class="card-text articleText">
                                 When you want answers about your cat’s health, trustworthy information is vital. To ensure that the cat health content
                                 on All About Cats is in line with the latest evidence-based veterinary information and health guidelines, every health-related 
-                                article is written or reviewed by our team of veterinarians.
+                                article is written or reviewed by our team of veterinarians.    
+                            </p>
                             </div>
                         </div>
-                    </div>  
+                    </div>                     
                 </div>
-               
+  
                 <div class="tab-pane fade" id="pills-funded" role="tabpanel" aria-labelledby="pills-funded-tab">
                     <div class="row g-0">
-                        <div class="articleEl pt-3">
-                            <div>
-                                <img class="img-size-for-card" src="https://momentfeed.com/images/funding.jpg" alt="Card image cap">
-                            </div>
-                            <div>
-                                All About Cats participates in affiliate marketing programs and partners with select brands. 
-                                The products we choose to cover are independently-chosen and thoroughly reviewed before we receive any payment.
-                                Our product review policy ensures that we are able to thoroughly test all products before we cover them.
-                                Commissions from these partnerships allow us to pay the All About Cats team and continue to provide high-quality information for our readers.
+                        <div class="col-6 col-md-3">
+                            <img class="img-fluid cardImage" src="https://momentfeed.com/images/funding.jpg" alt="Card image cap">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <div class="card-body">
+                            <p class="card-text articleText">
+                                The products we choose to cover are independently-chosen and thoroughly reviewed
+                                before we receive any payment. Our product review policy ensures
+                                that we are able to thoroughly test all products before we cover them.
+                            </p>
                             </div>
                         </div>
                     </div>  
@@ -140,19 +159,23 @@
             </div>
 
             <div class="row g-0">
-                <div class="col-12 col-md-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.97553756886!2d24.119608415459204!3d56.94922038089023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd324bd81f5%3A0xc69c7fd6be4fe652!2zTWFyaWphcyBpZWxhIDksIENlbnRyYSByYWpvbnMsIFLEq2dhLCBMVi0xMDUwLCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sus!4v1619012561193!5m2!1sru!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="col-12 col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.97553756886!2d24.119608415459204!3d56.94922038089023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd324bd81f5%3A0xc69c7fd6be4fe652!2zTWFyaWphcyBpZWxhIDksIENlbnRyYSByYWpvbnMsIFLEq2dhLCBMVi0xMDUwLCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sus!4v1619012561193!5m2!1sru!2sus" width="auto;" height="300px;" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+                <div class="col-12 col-md-6">
+                    <div class="card-body">
+                        <p class="card-text articleText">
+                            <div class="fs-5">Adress:</div>
+                            <div> <small>Marijas iela 9, Rīga, LV-1050  </small> </div>
+                            <div class="fs-5">Email:</div>
+                            <a href="">info@supercats.com</a>
+                            <div class="fs-5">Phone:</div>
+                            <div> <small>+371 28431277</small></div>
+                        </p>
+                    </div>
+                </div>
+            </div>  
 
-                <div class="col-12 col-md-5">
-                    <div class="fs-5">Adress:</div>
-                    <div> <small>Marijas iela 9, Rīga, LV-1050  </small> </div>
-                    <div class="fs-5">Email:</div>
-                    <a href="">info@supercats.com</a>
-                    <div class="fs-5">Phone:</div>
-                    <div> <small>+371 28431277</small></div>
-                </div>
-            </div>
         </div>
 
     </div>
